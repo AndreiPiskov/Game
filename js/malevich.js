@@ -9,6 +9,10 @@ $(document).ready(function () {
     snapTolerance: 23,
 	});
 
+	$('.block').draggable({
+		stop: function( event, ui ) {}
+});
+
   $('#blocks').on('mousedown', function () {
 		$('#instruction').fadeOut('slow');
 	})
